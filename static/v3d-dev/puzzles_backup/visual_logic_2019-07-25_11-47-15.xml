@@ -1,0 +1,355 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="0" scrolly="0" scale="0.9"></tab>
+  <tab name="Main" type="MainTab" active="true" scrollx="300.9266326873395" scrolly="-850.0886173774588" scale="1">
+    <variables>
+      <variable type="" id="^p3pE?JdbsV!|,^Ww,Wz">chExample</variable>
+    </variables>
+    <block type="ssaa" id="YcG72@K5HNgF6D$e]EkP" x="-270" y="-390">
+      <field name="LEVEL">0</field>
+      <next>
+        <block type="variables_set" id="qs~RG,-zNgyMHwpDmY!@">
+          <field name="VAR" id="^p3pE?JdbsV!|,^Ww,Wz" variabletype="">chExample</field>
+          <value name="VALUE">
+            <block type="math_number" id="tjKt!.|$Q6Crj!YKNKy(">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <next>
+            <block type="procedures_callnoreturn" id="A!/.GigO#q,1v.t?*wS2">
+              <mutation name="SwitchExample"></mutation>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block type="eventHTMLElem" id="xjxM-9s@FXC)JzVq4J~@" x="-270" y="-290">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="c5eoyNu9hKj2g+p*qm@k">
+          <field name="TEXT">btChange</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id=",:ie--^hg(w{M,oaa^F_">
+          <mutation name="OnChangeSize"></mutation>
+          <field name="NAME">OnChangeSize</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="#W5eKM4}Gv^WlfqWdi4A" x="-270" y="-170">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="l@CS.OQJo_]*y14}@9X~">
+          <field name="TEXT">cbMaterial1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="xTQuee6c(G:bMjO{c:@9">
+          <mutation name="OnChangeMaterial1">
+            <arg name="name"></arg>
+          </mutation>
+          <field name="NAME">OnChangeMaterial1</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="fR$]2lR5fi7)x:^5JDSL" x="-270" y="-50">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="UF_aqcmQ?Uy@O%j}?C+g">
+          <field name="TEXT">cbMaterial2</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="Rt!n+:+xM#/=p~Cs,iXW">
+          <mutation name="OnChangeMaterial2">
+            <arg name="name"></arg>
+          </mutation>
+          <field name="NAME">OnChangeMaterial2</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id=";Qs(v{a03bz:JU/3@]r#" x="-270" y="70">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="nv5Ij_tQV~tnq-I50qhq">
+          <field name="TEXT">chExample</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="procedures_callnoreturn" id="_ePEE0vo;~9Qy7y^h5(9">
+          <mutation name="SwitchExample"></mutation>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="Bx6K-UQaBm[,pkUtYOuF" x="-270" y="170">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="h2Jq@cYW-tFjVjy6sS4-">
+          <field name="TEXT">cbSize</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="UN]bLxGjK$^%D$*4:b3`">
+          <mutation name="OnChangeSize"></mutation>
+          <field name="NAME">OnChangeSize</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="vdCmpSRyayc.l3XrP!a." x="-270" y="270">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="g9J.05^PMgpd;lNKsSD6">
+          <field name="TEXT">cbSizeY</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="c,Umu,(/@:_YjnK`?-:S">
+          <mutation name="OnChangeSizeY"></mutation>
+          <field name="NAME">OnChangeSizeY</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="(T*VB^KrHN7MlEDzIXyR" x="-270" y="370">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="nQMR}Om`Om2HDT$$j`_o">
+          <field name="TEXT">cbSizeX</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="s?-X15HmI*^U|e2^|Uz@">
+          <mutation name="OnChangeSizeX"></mutation>
+          <field name="NAME">OnChangeSizeX</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="M`Uk6pM[v6jw^RB{-@Sn" x="-270" y="470">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="6jT[-;qH`F4eQmkL|_;J">
+          <field name="TEXT">cbProfile</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="_%BNy@C:kxYAv^BS/1l,">
+          <mutation name="OnChangeProfile"></mutation>
+          <field name="NAME">OnChangeProfile</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="E_2AL_(Yg_;fG?_.izzx" x="-270" y="570">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="AK4:-XQ`2x1S:TA8.Vg0">
+          <field name="TEXT">cbMode</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="-AIPjRs;U2z%#:XDhe]@">
+          <mutation name="OnChangeMode"></mutation>
+          <field name="NAME">OnChangeMode</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="un`ROf!Xg#.Y~clZwaB@" x="-270" y="670">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="Q7,[W9r(ZM@$bcD(2Cfe">
+          <field name="TEXT">cbDiv</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="a-[zQB=JjsT}!(C6HCfu">
+          <mutation name="OnChangeDiv"></mutation>
+          <field name="NAME">OnChangeDiv</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="o{C{*Y;QIG~J{9d:A_AE" x="-270" y="770">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="BKay,b?prcL?!7?$1J5u">
+          <field name="TEXT">cbGrooves</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="uwn6/%%0.LVJBi]]|8F]">
+          <mutation name="OnChangeGrooves"></mutation>
+          <field name="NAME">OnChangeGrooves</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="pO*4~tWK[Ju:-UK.Unx?" x="-270" y="870">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="V4DpmeP2Hpl*TObU9U?W">
+          <field name="TEXT">cbJems</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="4lilm*K*_03BTj^,aoFM">
+          <mutation name="OnChangeJems"></mutation>
+          <field name="NAME">OnChangeJems</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="iKQq:?UbIWTVW4qnhu|c" x="-270" y="970">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="sBz@P4.Iv#q[h+wNK3d$">
+          <field name="TEXT">cbJemsSize</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="x@C-j7G[IYd43NQZI5up">
+          <mutation name="OnChangeJems"></mutation>
+          <field name="NAME">OnChangeJems</field>
+        </block>
+      </statement>
+    </block>
+    <block type="eventHTMLElem" id="CQXoH;V{rx?4+(TE;`R/" x="-250" y="1070">
+      <field name="EVENT">change</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="Mhv?f^*}tE6+qay8d{3V">
+          <field name="TEXT">cbGemsRow</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="callJSFunction" id="E;D2aSL]7Ox~_Ntx64Wm">
+          <mutation name="OnChangeJems"></mutation>
+          <field name="NAME">OnChangeJems</field>
+        </block>
+      </statement>
+    </block>
+    <block type="procedures_defnoreturn" id="n8R[CiT4fK`[NI6j{Fpz" x="-270" y="1190">
+      <field name="NAME">SwitchExample</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="controls_ifelse" id="%r=8)/H~Ssf2T{yH5[=W">
+          <value name="IF0">
+            <block type="logic_compare" id="ZUohKS#GE_X6b|4~fv7G">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="_WzX;KYr8:pktyL=`P,X">
+                  <field name="VAR" id="^p3pE?JdbsV!|,^Ww,Wz" variabletype="">chExample</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id="Z^)G{6M*.V3RtnMS%CH7">
+                  <field name="NUM">1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="hide" id="*nt%D:j~5,`Z^*8C;^HY">
+              <value name="VALUE">
+                <block type="objectList" id="1VyJE?Tlg2=||$YS|:h3">
+                  <field name="FIELDNAME">Ring15</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id="b1,FhF=#bI)KL4!*qh_9">
+                  <value name="VALUE">
+                    <block type="objectList" id="Ka7O.qc~Q=ug}isC_%ah">
+                      <field name="FIELDNAME">Ring20</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="hide" id="2C*Ol~19/7*z9{mYg,iN">
+                      <value name="VALUE">
+                        <block type="objectList" id="p7eN%nY0c;jPJKuOSr7t">
+                          <field name="FIELDNAME">Text</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="hide" id="^+{li4@?zJ)$Q1Z351oc">
+                          <value name="VALUE">
+                            <block type="objectList" id=";.o@qFv7VmuL?z{OV1B:">
+                              <field name="FIELDNAME">Text.001</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="Ma,i0H+8i^dRqelluqNC">
+                              <field name="VAR" id="^p3pE?JdbsV!|,^Ww,Wz" variabletype="">chExample</field>
+                              <value name="VALUE">
+                                <block type="math_number" id="(cZ4lD?rW!n$S^R0g1N,">
+                                  <field name="NUM">0</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="show" id="1=$77Ao(E,aJ1,==;]{1">
+              <value name="VALUE">
+                <block type="objectList" id="n#AM;D{9/T[::j5Go3A`">
+                  <field name="FIELDNAME">Ring15</field>
+                </block>
+              </value>
+              <next>
+                <block type="show" id="jF$5@YQ:8YD{rK/+wXd(">
+                  <value name="VALUE">
+                    <block type="objectList" id=":ZKZ59FKzC@gwY^/z?Y|">
+                      <field name="FIELDNAME">Ring20</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="5q6$rgf4iEq$+?6nWeti">
+                      <value name="VALUE">
+                        <block type="objectList" id="~n*~?hoZph}r8lG+L*l9">
+                          <field name="FIELDNAME">Text</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="show" id="`+yhbvz*qE4$/M{ww@93">
+                          <value name="VALUE">
+                            <block type="objectList" id="oF1c{z*cPG_-b,qiC_Gn">
+                              <field name="FIELDNAME">Text.001</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="wo.,*;3Ye-iDd?TZQ2Q+">
+                              <field name="VAR" id="^p3pE?JdbsV!|,^Ww,Wz" variabletype="">chExample</field>
+                              <value name="VALUE">
+                                <block type="math_number" id="!r0q?mS,~0O,%D_(Or|1">
+                                  <field name="NUM">1</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings width="734" height="654"></editorsettings>
+</xml>

@@ -1,0 +1,31 @@
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,600,700&display=swap&subset=cyrillic')
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext')
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic')
+@import '~vuetify/src/stylus/theme'
+
+// $color-pack = false
+// $body-font-family = 'Open Sans', system-ui
+$body-font-family = 'Roboto', system-ui
+$material-light.background = #fff
+
+@require '~vuetify/src/stylus/main'
+
+.blur-transition
+  &-enter-active, &-leave-active
+    transition all 0.4s ease
+    transform scale(1)
+    filter blur(0)
+
+  &-enter, &-leave-to
+    filter blur(10px)
+    transform scale(1.2)
+
+.v-item
+  border-radius 4px
+
+  .theme--light &
+    border 1px solid #c5c5c5
+
+    &--active
+      border-color var(--v-primary-base)

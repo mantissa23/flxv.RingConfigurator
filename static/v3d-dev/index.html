@@ -1,0 +1,181 @@
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<!-- __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated --><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>V3D Dev</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.stickylayer.min.js"></script>
+<script>
+   $(document).ready(function()
+   {
+      $("#canvas").stickylayer({orientation: 5, position: [0, 0], delay: 0, keepOriginalPos: true});
+      $("#lrSpinner").stickylayer({orientation: 5, position: [0, 0], delay: 0, keepOriginalPos: true});
+   });
+</script>
+  <link href="verge.css" rel="stylesheet">
+  <script src="babel.min.js"></script>
+  <script src="../scripts/v3d-app/core/v3d.js"></script>
+  <script src="../scripts/v3d-app/core/svg-loader.js"></script>
+<!--   <script src="../scripts/v3d-app/core/three-csg.js"></script> -->
+
+<!--   <script type="text/babel" src="../scripts/v3d-app/modules/CSGMesh.js"></script> -->
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="test.js"></script>
+
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="../scripts/v3d-app/modules/csg.js"></script>
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="../scripts/v3d-app/modules/helpers.js"></script>
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="../scripts/v3d-app/modules/geometry.js"></script>
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="../scripts/v3d-app/modules/materials.js"></script>
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="../scripts/v3d-app/modules/render.js"></script>
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="../scripts/v3d-app/modules/rings.js"></script>
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="../scripts/v3d-app/modules/gems.js"></script>
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="../scripts/v3d-app/modules/shapes.js"></script>
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="../scripts/v3d-app/modules/app.js"></script>
+  <script data-presets = "es2015" data-plugins= "transform-modules-umd" type="text/babel" src="feliksov-konstruktor.js"></script>
+
+</head>
+<body>
+   <div id="container">
+      <div id="Layer2">
+         <div id="Layer2_Container">
+            <select name="cbProfile" size="1" id="cbSize">
+               <option selected value="15">15</option>
+               <option value="15.5">15.5</option>
+               <option value="16">16</option>
+               <option value="16.5">16.5</option>
+               <option value="17">17</option>
+               <option value="17.5">17.5</option>
+               <option value="18">18</option>
+               <option value="18.5">18.5</option>
+               <option value="19">19</option>
+               <option value="19.5">19.5</option>
+               <option value="20">20</option>
+            </select>
+            <select name="cbProfile" size="1" id="cbProfile">
+               <option selected value="a">A</option>
+               <option value="c">C</option>
+               <option value="d">D</option>
+               <option value="j">J</option>
+            </select>
+            <select name="cbProfile" size="1" id="cbSizeY">
+               <option value="1">1</option>
+               <option value="1.1">1.1</option>
+               <option value="1.2">1.2</option>
+               <option value="1.3">1.3</option>
+               <option value="1.4">1.4</option>
+               <option selected value="1.5">1.5</option>
+               <option value="1.6">1.6</option>
+               <option value="1.7">1.7</option>
+               <option value="1.8">1.8</option>
+               <option value="1.9">1.9</option>
+               <option value="2">2</option>
+            </select>
+            <select name="cbProfile" size="1" id="cbSizeX">
+               <option value="2">2</option>
+               <option value="2.5">2.5</option>
+               <option value="3">3</option>
+               <option value="3.5">3.5</option>
+               <option value="4">4</option>
+               <option value="4.5">4.5</option>
+               <option selected value="5">5</option>
+               <option value="5.5">5.5</option>
+               <option value="6">6</option>
+               <option value="6.5">6.5</option>
+               <option value="7">7</option>
+               <option value="7.5">7.5</option>
+               <option value="8">8</option>
+               <option value="8.5">8.5</option>
+               <option value="9">9</option>
+               <option value="9.5">9.5</option>
+               <option value="10">10</option>
+            </select>
+            <label for="" id="Label2">Материал 1</label>
+            <label for="" id="Label6">Тип профиля</label>
+            <div id="wb_chExample">
+               <input type="checkbox" id="chExample" name="chExample" value="on"><label for="chExample"></label></div>
+            <label for="" id="Label1">Размер профиля по высоте (мм)</label>
+            <label for="" id="Label4">тест</label>
+            <select name="cbProfile" size="1" id="cbMode">
+               <option selected value="BOTH">Оба кольца</option>
+               <option value="WOMAN">Женское кольцо</option>
+               <option value="MAN">Мужское кольцо</option>
+            </select>
+            <label for="" id="Label7">Режим конструктора</label>
+            <label for="" id="Label3">Размер кольца, диаметр (мм)</label>
+            <select name="cbDiv" size="1" id="cbDiv">
+               <option selected value="m1m1">1+1</option>
+               <option value="m1m2">1+2</option>
+            </select>
+            <label for="" id="Label5">Мультиматериалы</label>
+            <label for="" id="Label8">Размер профиля по ширине (мм)</label>
+            <select name="cbGrooves" size="1" id="cbGrooves">
+               <option selected value="none">none</option>
+               <option value="u">U</option>
+               <option value="v">V</option>
+               <option value="s">S</option>
+            </select>
+            <label for="" id="Label9">Насечка</label>
+            <select name="cbGroovesSize" size="1" id="cbGroovesSize">
+               <option value="0.35">0.35</option>
+               <option value="0.50">0.50</option>
+               <option value="0.80">0.80</option>
+               <option selected value="1.00">1.00</option>
+            </select>
+            <select name="cbProfile" size="1" id="cbMaterial1">
+               <option value="yellowPolished">yellowPolished</option>
+               <option value="whitePolished">whitePolished</option>
+               <option value="yellowMatt">yellowMatt</option>
+               <option value="whiteMatt">whiteMatt</option>
+               <option value="whiteMattCross">whiteMattCross</option>
+               <option value="yellowMattCross">yellowMattCross</option>
+               <option value="rhodium">rhodium</option>
+            </select>
+            <select name="cbProfile" size="1" id="cbMaterial2">
+               <option value="yellowPolished">yellowPolished</option>
+               <option value="whitePolished">whitePolished</option>
+               <option value="yellowMatt">yellowMatt</option>
+               <option value="whiteMatt">whiteMatt</option>
+               <option value="yellowMattCross">yellowMattCross</option>
+               <option value="whiteMattCross">whiteMattCross</option>
+               <option value="rhodium">rhodium</option>
+            </select>
+            <label for="" id="Label10">Материал 2</label>
+            <label for="" id="Label11">Расположение камней</label>
+            <select name="cbProfile" size="1" id="cbJems">
+               <option selected value="none">none</option>
+               <option value="flush">flush</option>
+               <option value="section">section</option>
+               <option value="channel">channel</option>
+            </select>
+            <select name="cbProfile" size="1" id="cbJemsSize">
+               <option value="all">all</option>
+               <option value="half">half</option>
+               <option value="third">third</option>
+               <option selected value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+            </select>
+            <select name="cbProfile" size="1" id="cbGemsRow">
+               <option selected value="1">1</option>
+               <option value="2">2</option>
+            </select>
+         </div>
+      </div>
+   </div>
+   <div id="canvas">
+   </div>
+   <div id="lrSpinner">
+      <div id="lrSpinner_Container">
+         <div id="wb_">
+            <img src="images/spinner.gif" id="" alt=""></div>
+      </div>
+   </div>
+</body>
+</html>

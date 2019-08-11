@@ -1,0 +1,2675 @@
+div#container
+{
+   width: 970px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+   overflow-y: auto;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}
+#canvas
+{
+   background-color: transparent;
+   background-image: none;
+}
+#Layer2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   border: 1px solid #CCCCCC;
+}
+#Label3
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#cbSize
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbSize:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#cbProfile
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbProfile:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#cbSizeY
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbSizeY:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#cbSizeX
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbSizeX:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#Label2
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label6
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label5
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#wb_chExample
+{
+   margin: 0;
+}
+#wb_chExample, #wb_chExample *, #wb_chExample *::before, #wb_chExample *::after
+{
+   box-sizing: border-box;
+}
+#wb_chExample input[type='checkbox']
+{
+   position: absolute;
+   padding: 0;
+   margin: 0;
+   opacity: 0;
+   z-index: 1;
+   width: 20px;
+   height: 20px;
+   left: 0;
+   top: 0;
+}
+#wb_chExample label
+{
+   display: inline-block;
+   vertical-align: middle;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 0;
+   height: 0;
+   padding: 0;
+}
+#wb_chExample label::before
+{
+   content: "";
+   display: inline-block;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left: 0;
+   top: 0;
+   background-color: #FFFFFF;
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+}
+#wb_chExample label::after
+{
+   display: inline-block;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left: 0;
+   top: 0;
+   padding: 0;
+   text-align: center;
+   line-height: 20px;
+}
+#wb_chExample input[type='checkbox']:checked + label::after
+{
+   content: " ";
+   background: url('data:image/svg+xml,%3Csvg%20height%3D%2220%22%20width%3D%2220%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20style%3D%22fill%3A%23FFFFFF%22%20transform%3D%22scale%280.0112%29%22%3E%0D%0A%3Cpath%20transform%3D%22rotate%28180%29%20scale%28-1%2C1%29%20translate%280%2C-1536%29%22%20d%3D%22M1671%20970q0%20-40%20-28%20-68l-724%20-724l-136%20-136q-28%20-28%20-68%20-28t-68%2028l-136%20136l-362%20362q-28%2028%20-28%2068t28%2068l136%20136q28%2028%2068%2028t68%20-28l294%20-295l656%20657q28%2028%2068%2028t68%20-28l136%20-136q28%20-28%2028%20-68z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center center;
+   background-size: 80% 80%
+}
+#wb_chExample input[type='checkbox']:checked + label::before
+{
+   background-color: #3370B7;
+   background-image: none;
+   border-color: #3370B7;
+}
+#wb_chExample input[type='checkbox']:focus + label::before
+{
+   outline: thin dotted;
+}
+#Label4
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label1
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label7
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#cbMode
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbMode:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#Label8
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#cbDiv
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbDiv:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#Label9
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#cbGrooves
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbGrooves:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#cbGroovesSize
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbGroovesSize:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#cbMaterial1
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbMaterial1:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#Label10
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#cbMaterial2
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbMaterial2:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#lrSpinner
+{
+   background-color: transparent;
+   background-image: none;
+}
+#Label11
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#cbJems
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbJems:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#cbJemsSize
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbJemsSize:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#cbGemsRow
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#cbGemsRow:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#cbMode
+{
+   position: absolute;
+   left: 18px;
+   top: 36px;
+   width: 195px;
+   height: 28px;
+}
+#Label2
+{
+   position: absolute;
+   left: 260px;
+   top: 84px;
+   width: 190px;
+   height: 20px;
+   line-height: 20px;
+}
+#cbSize
+{
+   position: absolute;
+   left: 238px;
+   top: 36px;
+   width: 195px;
+   height: 28px;
+}
+#Layer2_Container
+{
+   width: 964px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#cbGroovesSize
+{
+   position: absolute;
+   left: 682px;
+   top: 211px;
+   width: 97px;
+   height: 28px;
+}
+#Label3
+{
+   position: absolute;
+   left: 238px;
+   top: 8px;
+   width: 204px;
+   height: 20px;
+   line-height: 20px;
+}
+#cbJemsSize
+{
+   position: absolute;
+   left: 17px;
+   top: 211px;
+   width: 196px;
+   height: 28px;
+}
+#Label4
+{
+   position: absolute;
+   left: 494px;
+   top: 86px;
+   width: 158px;
+   height: 16px;
+   line-height: 16px;
+}
+#cbMaterial1
+{
+   position: absolute;
+   left: 260px;
+   top: 112px;
+   width: 196px;
+   height: 28px;
+}
+#Label5
+{
+   position: absolute;
+   left: 692px;
+   top: 86px;
+   width: 208px;
+   height: 16px;
+   line-height: 16px;
+}
+#cbMaterial2
+{
+   position: absolute;
+   left: 260px;
+   top: 183px;
+   width: 196px;
+   height: 28px;
+}
+#Label6
+{
+   position: absolute;
+   left: 466px;
+   top: 8px;
+   width: 187px;
+   height: 16px;
+   line-height: 16px;
+}
+#Label7
+{
+   position: absolute;
+   left: 18px;
+   top: 8px;
+   width: 204px;
+   height: 20px;
+   line-height: 20px;
+}
+#chExample
+{
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+#Layer2
+{
+   position: absolute;
+   overflow: auto;
+   text-align: center;
+   left: 2px;
+   top: 493px;
+   width: 966px;
+   height: 279px;
+}
+#lrSpinner_Container
+{
+   width: 688px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#Label8
+{
+   position: absolute;
+   left: 690px;
+   top: 8px;
+   width: 208px;
+   height: 16px;
+   line-height: 16px;
+}
+#canvas
+{
+   position: absolute;
+   text-align: left;
+   left: 4px;
+   top: 0px;
+   width: 71.2371%;
+   height: 493px;
+   z-index: 27;
+}
+#Label9
+{
+   position: absolute;
+   left: 563px;
+   top: 178px;
+   width: 208px;
+   height: 16px;
+   line-height: 16px;
+}
+#cbSizeX
+{
+   position: absolute;
+   left: 692px;
+   top: 32px;
+   width: 195px;
+   height: 28px;
+}
+#cbSizeY
+{
+   position: absolute;
+   left: 17px;
+   top: 108px;
+   width: 196px;
+   height: 28px;
+}
+#lrSpinner
+{
+   position: absolute;
+   text-align: center;
+   left: 14px;
+   top: 10px;
+   width: 70.9278%;
+   height: 477px;
+   z-index: 28;
+}
+#Label10
+{
+   position: absolute;
+   left: 261px;
+   top: 159px;
+   width: 190px;
+   height: 20px;
+   line-height: 20px;
+}
+#Label11
+{
+   position: absolute;
+   left: 16px;
+   top: 147px;
+   width: 208px;
+   height: 16px;
+   line-height: 16px;
+}
+#cbProfile
+{
+   position: absolute;
+   left: 466px;
+   top: 32px;
+   width: 194px;
+   height: 28px;
+}
+#wb_
+{
+   position: absolute;
+   left: 240px;
+   top: 148px;
+   width: 191px;
+   height: 176px;
+}
+#cbGemsRow
+{
+   position: absolute;
+   left: 18px;
+   top: 243px;
+   width: 196px;
+   height: 28px;
+}
+#cbDiv
+{
+   position: absolute;
+   left: 692px;
+   top: 108px;
+   width: 195px;
+   height: 28px;
+}
+#cbJems
+{
+   position: absolute;
+   left: 17px;
+   top: 176px;
+   width: 196px;
+   height: 28px;
+}
+#cbGrooves
+{
+   position: absolute;
+   left: 563px;
+   top: 211px;
+   width: 97px;
+   height: 28px;
+}
+#Label1
+{
+   position: absolute;
+   left: 16px;
+   top: 84px;
+   width: 208px;
+   height: 16px;
+   line-height: 16px;
+}
+#wb_chExample
+{
+   position: absolute;
+   left: 466px;
+   top: 88px;
+   width: 20px;
+   height: 20px;
+}
+@media only screen and (min-width: 970px)
+{
+div#container
+{
+   width: 970px;
+}
+body
+{
+   background-color: #FFFFFF;
+}
+#canvas
+{
+   left: 4px;
+   top: 0px;
+   height: 493px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#canvas
+{
+   width: 71.2371%;
+}
+#Layer2
+{
+   left: 4px;
+   top: 493px;
+   width: 966px;
+   height: 227px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FBFBFB;
+   background-image: none;
+}
+#Layer2_Container
+{
+   width: 964px;
+}
+#Label3
+{
+   left: 238px;
+   top: 8px;
+   width: 204px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbSize
+{
+   left: 238px;
+   top: 36px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbProfile
+{
+   left: 466px;
+   top: 32px;
+   width: 194px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbSizeY
+{
+   left: 17px;
+   top: 108px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbSizeX
+{
+   left: 692px;
+   top: 32px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label2
+{
+   left: 260px;
+   top: 84px;
+   width: 190px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label6
+{
+   left: 466px;
+   top: 8px;
+   width: 187px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label5
+{
+   left: 466px;
+   top: 84px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#wb_chExample
+{
+   left: 466px;
+   top: 194px;
+   width: 20px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#wb_chExample input[type='checkbox']
+{
+   width: 20px;
+   height: 20px;
+}
+#wb_chExample label::before
+{
+   width: 20px;
+   height: 20px;
+   border-color: #CCCCCC;
+}
+#wb_chExample label::after
+{
+   width: 20px;
+   height: 20px;
+   line-height: 20px;
+}
+#wb_chExample input[type='checkbox']:checked + label::after
+{
+   color: #FFFFFF;
+}
+#wb_chExample input[type='checkbox']:checked + label::before
+{
+   background-color: #3370B7;
+   background-image: none;
+   border-color: #3370B7;
+}
+#Label4
+{
+   left: 495px;
+   top: 192px;
+   width: 68px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label1
+{
+   left: 16px;
+   top: 84px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label7
+{
+   left: 18px;
+   top: 8px;
+   width: 204px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbMode
+{
+   left: 18px;
+   top: 36px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label8
+{
+   left: 690px;
+   top: 10px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbDiv
+{
+   left: 466px;
+   top: 108px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label9
+{
+   left: 18px;
+   top: 158px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbGrooves
+{
+   left: 16px;
+   top: 182px;
+   width: 99px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbGroovesSize
+{
+   left: 130px;
+   top: 182px;
+   width: 97px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbMaterial1
+{
+   left: 261px;
+   top: 112px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label10
+{
+   left: 260px;
+   top: 153px;
+   width: 190px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbMaterial2
+{
+   left: 262px;
+   top: 182px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#wb_
+{
+   left: 169px;
+   top: 14px;
+   width: 331px;
+   height: 331px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#lrSpinner
+{
+   left: 15px;
+   top: 0px;
+   height: 358px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#lrSpinner
+{
+   width: 72.3711%;
+}
+#lrSpinner_Container
+{
+   width: 702px;
+}
+#Label11
+{
+   left: 692px;
+   top: 69px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbJems
+{
+   left: 692px;
+   top: 97px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbJemsSize
+{
+   left: 693px;
+   top: 129px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbGemsRow
+{
+   left: 693px;
+   top: 164px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 969px)
+{
+div#container
+{
+   width: 768px;
+}
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#canvas
+{
+   left: 0px;
+   top: 0px;
+   height: 429px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#canvas
+{
+   width: 100.2604%;
+}
+#Layer2
+{
+   left: 0px;
+   top: 429px;
+   width: 766px;
+   height: 293px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FBFBFB;
+   background-image: none;
+}
+#Layer2_Container
+{
+   width: 764px;
+}
+#Label3
+{
+   left: 498px;
+   top: 74px;
+   width: 204px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbSize
+{
+   left: 496px;
+   top: 102px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbProfile
+{
+   left: 263px;
+   top: 32px;
+   width: 194px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbSizeY
+{
+   left: 18px;
+   top: 110px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbSizeX
+{
+   left: 495px;
+   top: 32px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label2
+{
+   left: 263px;
+   top: 86px;
+   width: 190px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label6
+{
+   left: 263px;
+   top: 8px;
+   width: 187px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label5
+{
+   left: 17px;
+   top: 150px;
+   width: 187px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#wb_chExample
+{
+   left: 513px;
+   top: 272px;
+   width: 20px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#wb_chExample input[type='checkbox']
+{
+   width: 20px;
+   height: 20px;
+}
+#wb_chExample label::before
+{
+   width: 20px;
+   height: 20px;
+   border-color: #CCCCCC;
+}
+#wb_chExample label::after
+{
+   width: 20px;
+   height: 20px;
+   line-height: 20px;
+}
+#wb_chExample input[type='checkbox']:checked + label::after
+{
+   color: #FFFFFF;
+}
+#wb_chExample input[type='checkbox']:checked + label::before
+{
+   background-color: #3370B7;
+   background-image: none;
+   border-color: #3370B7;
+}
+#Label4
+{
+   left: 541px;
+   top: 270px;
+   width: 71px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label1
+{
+   left: 17px;
+   top: 86px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label7
+{
+   left: 19px;
+   top: 8px;
+   width: 204px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbMode
+{
+   left: 19px;
+   top: 36px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label8
+{
+   left: 496px;
+   top: 8px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbDiv
+{
+   left: 19px;
+   top: 176px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label9
+{
+   left: 17px;
+   top: 222px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbGrooves
+{
+   left: 18px;
+   top: 246px;
+   width: 99px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbGroovesSize
+{
+   left: 134px;
+   top: 246px;
+   width: 97px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbMaterial1
+{
+   left: 262px;
+   top: 122px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label10
+{
+   left: 263px;
+   top: 162px;
+   width: 190px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbMaterial2
+{
+   left: 265px;
+   top: 190px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#wb_
+{
+   left: 196px;
+   top: 9px;
+   width: 331px;
+   height: 331px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#lrSpinner
+{
+   left: 23px;
+   top: 22px;
+   height: 349px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#lrSpinner
+{
+   width: 98.1771%;
+}
+#lrSpinner_Container
+{
+   width: 754px;
+}
+#Label11
+{
+   left: 496px;
+   top: 138px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbJems
+{
+   left: 496px;
+   top: 166px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbJemsSize
+{
+   left: 497px;
+   top: 198px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbGemsRow
+{
+   left: 497px;
+   top: 233px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+}
+@media only screen and (max-width: 767px)
+{
+div#container
+{
+   width: 320px;
+}
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#canvas
+{
+   left: 0px;
+   top: 0px;
+   height: 272px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#canvas
+{
+   width: 99.6875%;
+}
+#Layer2
+{
+   left: 0px;
+   top: 272px;
+   width: 318px;
+   height: 854px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+}
+#Layer2_Container
+{
+   width: 316px;
+}
+#Label3
+{
+   left: 20px;
+   top: 81px;
+   width: 204px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbSize
+{
+   left: 20px;
+   top: 109px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbProfile
+{
+   left: 20px;
+   top: 171px;
+   width: 194px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbSizeY
+{
+   left: 20px;
+   top: 307px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbSizeX
+{
+   left: 21px;
+   top: 237px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label2
+{
+   left: 19px;
+   top: 505px;
+   width: 190px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label6
+{
+   left: 20px;
+   top: 147px;
+   width: 187px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label5
+{
+   left: 19px;
+   top: 347px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#wb_chExample
+{
+   left: 20px;
+   top: 798px;
+   width: 20px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#wb_chExample input[type='checkbox']
+{
+   width: 20px;
+   height: 20px;
+}
+#wb_chExample label::before
+{
+   width: 20px;
+   height: 20px;
+   border-color: #CCCCCC;
+}
+#wb_chExample label::after
+{
+   width: 20px;
+   height: 20px;
+   line-height: 20px;
+}
+#wb_chExample input[type='checkbox']:checked + label::after
+{
+   color: #FFFFFF;
+}
+#wb_chExample input[type='checkbox']:checked + label::before
+{
+   background-color: #3370B7;
+   background-image: none;
+   border-color: #3370B7;
+}
+#Label4
+{
+   left: 40px;
+   top: 796px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label1
+{
+   left: 19px;
+   top: 283px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label7
+{
+   left: 20px;
+   top: 12px;
+   width: 204px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbMode
+{
+   left: 20px;
+   top: 40px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label8
+{
+   left: 19px;
+   top: 213px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbDiv
+{
+   left: 20px;
+   top: 371px;
+   width: 195px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label9
+{
+   left: 19px;
+   top: 419px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbGrooves
+{
+   left: 19px;
+   top: 455px;
+   width: 97px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbGroovesSize
+{
+   left: 135px;
+   top: 455px;
+   width: 97px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbMaterial1
+{
+   left: 20px;
+   top: 533px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#Label10
+{
+   left: 20px;
+   top: 578px;
+   width: 190px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbMaterial2
+{
+   left: 19px;
+   top: 602px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#wb_
+{
+   left: 0px;
+   top: 3px;
+   width: 229px;
+   height: 229px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#lrSpinner
+{
+   left: 43px;
+   top: 0px;
+   height: 272px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#lrSpinner
+{
+   width: 88.4375%;
+}
+#lrSpinner_Container
+{
+   width: 283px;
+}
+#Label11
+{
+   left: 19px;
+   top: 651px;
+   width: 208px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#cbJems
+{
+   left: 21px;
+   top: 675px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbJemsSize
+{
+   left: 21px;
+   top: 712px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#cbGemsRow
+{
+   left: 21px;
+   top: 753px;
+   width: 196px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+}
